@@ -1,0 +1,6 @@
+clock: clock.o
+	g++ -o clock clock.o -lX11
+clock.o: clock.cpp
+	g++ -c clock.cpp
+clean:
+	rm clock.o
