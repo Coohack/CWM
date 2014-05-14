@@ -1,0 +1,14 @@
+main:main.o window_Window.o window_Desktop.o event_Event.o event_Window.o
+	g++ -o main main.o window_Window.o window_Desktop.o event_Event.o event_Window.o -lX11 -lpthread
+main.o: main.cpp
+	g++ -c main.cpp
+window_Window.o:window_Window.cpp
+	g++ -c window_Window.cpp
+window_Desktop.o:window_Desktop.cpp
+	g++ -c window_Desktop.cpp
+event_Event.o:event_Event.cpp
+	g++ -c event_Event.cpp
+event_Window.o:event_Window.cpp
+	g++ -c event_Window.cpp
+clean:
+	rm main.o window_Window.o window_Desktop.o event_Event.o event_Window.o
