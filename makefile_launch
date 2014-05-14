@@ -1,6 +1,6 @@
 launch:launch.o
-	g++ -o launch launch.o `pkg-config --cflags --libs gtk+-3.0`
+	g++ -o launch launch.o `pkg-config --cflags --libs gtk+-2.0`
 launch.o:launch.cpp
-	g++ -c launch.cpp `pkg-config --cflags --libs gtk+-3.0`
+	g++ -c launch.cpp `pkg-config --cflags --libs gtk+-2.0`
 clean:
 	rm launch.o
