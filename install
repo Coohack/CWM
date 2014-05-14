@@ -1,0 +1,7 @@
+#!/bin/sh
+make clean -f makefile_desktop
+make clean -f makefile_launch
+make clean -f makefile_clock
+make -f makefile_desktop
+make -f makefile_launch
+make -f makefile_clock
